@@ -31,7 +31,7 @@ dfFourthPlotFiltered$DateTime <- strptime(dfFourthPlotFiltered$DateTime, format 
 # creating file to write plot in
 png("plot4.png", width = 480, height = 480)
 
-par(mfrow=c(2,2), mar=c(4,1,1,1))
+par(mfrow=c(2,2), mar=c(4,4,2,1))
 
 with(dfFourthPlotFiltered, plot(DateTime, Global_active_power, 
                                 type = "l", ylab = "Global Active Power (kilowatts)", xlab = " "))
